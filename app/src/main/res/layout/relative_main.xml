@@ -1,32 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_weight="1"
-    android:orientation="vertical"
+    android:layout_height="match_parent">
 
-    tools:context=".MainActivity">
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="0.1"/>
 
     <ImageView
         android:id="@+id/logo_irlix"
         android:layout_width="153dp"
         android:layout_height="45dp"
-        android:layout_gravity="center"
+        android:layout_above="@id/etName"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
         android:src="@drawable/ic_irlix_logo_l_1" />
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="0.1"/>
+
     <EditText
         android:id="@+id/etName"
         android:layout_width="215dp"
         android:layout_height="46dp"
+        android:layout_centerInParent="true"
         android:layout_gravity="center"
         android:background="@drawable/ic_rectangle_35"
         android:gravity="center"
@@ -38,6 +30,8 @@
         android:id="@+id/etPassword"
         android:layout_width="215dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/etName"
+        android:layout_centerInParent="true"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:background="@drawable/ic_rectangle_35"
@@ -46,22 +40,27 @@
         android:inputType="textPassword"
         android:textAlignment="center"
         android:textSize="13dp" />
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="0.1"/>
-    <Button
-        android:id="@+id/butContinue"
-        android:layout_width="165dp"
-        android:layout_height="55dp"
-        android:layout_gravity="center"
-        android:background="@drawable/background_button_green"
-        android:text="@string/butContinue"
-        android:textAllCaps="false"
-        android:textColor="@color/white" />
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="0.1"/>
 
-</LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/etPassword"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/butContinue"
+            android:layout_width="165dp"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:backgroundTint="#19BF6F"
+            android:text="@string/butContinue"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:cornerRadius="10dp" />
+
+
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/room_decription"
+        android:layout_width="360dp"
+        android:layout_height="150dp"
+        android:background="@drawable/background_continue_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelBooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Бронирование"
+        app:layout_constraintTop_toTopOf="@id/room_decription"
+        app:layout_constraintBottom_toBottomOf="@id/room_decription"
+        app:layout_constraintLeft_toLeftOf="@id/room_decription"
+        app:layout_constraintRight_toRightOf="@id/room_decription"
+        app:layout_constraintVertical_bias="0.08"
+        android:textSize="16dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tvOffice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:text="@string/office"
+        android:textColor="@color/textBreakageClaim"
+
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="@id/room_decription"
+        app:layout_constraintLeft_toLeftOf="@id/room_decription"
+        app:layout_constraintTop_toBottomOf="@id/labelBooking"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <TextView
+        android:id="@+id/tvOfficeInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sdf"
+        android:textColor="@color/textBreakageClaim"
+        app:layout_constraintBottom_toBottomOf="@id/room_decription"
+        app:layout_constraintLeft_toRightOf="@+id/tvOffice"
+        app:layout_constraintTop_toBottomOf="@id/labelBooking"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <TextView
+        android:id="@+id/tvPremises"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:text="@string/premises"
+        android:textColor="@color/textBreakageClaim"
+        android:textSize="13dp"
+        app:layout_constraintLeft_toLeftOf="@id/room_decription"
+        app:layout_constraintTop_toBottomOf="@id/tvOffice" />
+
+    <TextView
+        android:id="@+id/tvPremisesInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wefwe"
+        android:textColor="@color/textBreakageClaim"
+        android:textSize="13dp"
+        app:layout_constraintLeft_toRightOf="@id/tvPremises"
+        app:layout_constraintTop_toBottomOf="@id/tvOffice" />
+
+    <TextView
+        android:id="@+id/tvFloor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:text="@string/floor"
+        android:textColor="@color/textBreakageClaim"
+        android:textSize="13dp"
+        app:layout_constraintLeft_toLeftOf="@id/room_decription"
+        app:layout_constraintTop_toBottomOf="@id/tvPremises" />
+
+    <TextView
+        android:id="@+id/tvFloorInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sdfsd"
+        android:textColor="@color/textBreakageClaim"
+        android:textSize="13dp"
+        app:layout_constraintLeft_toRightOf="@id/tvFloor"
+        app:layout_constraintTop_toBottomOf="@id/tvPremises" />
+
+    <TextView
+        android:id="@+id/tvNumWorkplace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:text="@string/numWorkplace"
+        android:textColor="@color/textBreakageClaim"
+        android:textSize="13dp"
+        app:layout_constraintLeft_toLeftOf="@id/room_decription"
+        app:layout_constraintTop_toBottomOf="@id/tvFloor" />
+
+    <TextView
+        android:id="@+id/tvNumWorkplaceInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="21"
+        android:textColor="@color/textBreakageClaim"
+        android:textSize="13dp"
+        app:layout_constraintLeft_toRightOf="@id/tvNumWorkplace"
+        app:layout_constraintTop_toBottomOf="@id/tvFloor" />
+
+    <TextView
+        android:id="@+id/tvDateBooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dateBooking"
+        android:textColor="@color/textBreakageClaim"
+        android:paddingLeft="16dp"
+        android:textSize="13dp"
+        app:layout_constraintLeft_toLeftOf="@id/room_decription"
+        app:layout_constraintTop_toBottomOf="@id/tvNumWorkplace" />
+
+    <TextView
+        android:id="@+id/tvDateBookingInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="21.03.2021, c 9.30 - по 18.30"
+        android:textColor="@color/textBreakageClaim"
+        android:textSize="13dp"
+        app:layout_constraintLeft_toRightOf="@id/tvDateBooking"
+        app:layout_constraintTop_toBottomOf="@id/tvNumWorkplace" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

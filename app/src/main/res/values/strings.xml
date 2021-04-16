@@ -1,4 +1,22 @@
 <resources>
     <string name="app_name">Lesson1</string>
     <string name="hello_world">Hello world</string>
+    <string name="etName">Номер телефона или e-mail</string>
+    <string name="etPassword">Пароль</string>
+    <string name="butContinue">Продолжить</string>
+    <string name="office">Офис: </string>
+    <string name="premises">Помещение: </string>
+    <string name="floor">Этаж: </string>
+    <string name="numWorkplace">Номер рабочего места: </string>
+    <string name="tvBreakageClaim">Заявка о поломке</string>
+    <string name="labelDescriptionProblem">Опишите проблему</string>
+    <string name="butSend">Отправить</string>
+    <string name="butBookPlace">Забронировать место</string>
+    <string name="premisesUl">Помещение</string>
+    <string name="butDetails">Детали</string>
+    <string name="edSerch">Поиск</string>
+    <string name="labelName">Название</string>
+    <string name="labelFloor">Этаж</string>
+    <string name="labelNumCabinet">Номер кабинета</string>
+    <string name="dateBooking">Дата: </string>
 </resources>

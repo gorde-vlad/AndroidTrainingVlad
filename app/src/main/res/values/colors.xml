@@ -7,4 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="continue_background">#19BF6F</color>
+    <color name="description_problem">#DEDEDE</color>
+    <color name="textBreakageClaim">#FFFFFF</color>
 </resources>

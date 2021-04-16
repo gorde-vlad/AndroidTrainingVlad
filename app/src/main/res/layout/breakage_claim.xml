@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/butBack"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/ic_caretup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <TextView
+        android:id="@+id/tvBreakageClaim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvBreakageClaim"
+        android:textColor="@color/continue_background"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+
+    <View
+        android:id="@+id/room_decription"
+        android:layout_width="380dp"
+        android:layout_height="115dp"
+        android:background="@drawable/background_continue_button"
+        app:layout_constraintBottom_toBottomOf="@id/tvNumWorkplace"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvOffice" />
+
+    <TextView
+        android:id="@+id/tvOffice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:text="@string/office"
+        android:textColor="@color/textBreakageClaim"
+
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/room_decription"
+        app:layout_constraintTop_toBottomOf="@id/butBack"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <TextView
+        android:id="@+id/tvOfficeInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sdf"
+        android:textColor="@color/textBreakageClaim"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tvOffice"
+        app:layout_constraintTop_toBottomOf="@id/butBack"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <TextView
+        android:id="@+id/tvPremises"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:text="@string/premises"
+        android:textColor="@color/textBreakageClaim"
+        android:textSize="13dp"
+        app:layout_constraintLeft_toLeftOf="@id/room_decription"
+        app:layout_constraintTop_toBottomOf="@id/tvOffice" />
+
+    <TextView
+        android:id="@+id/tvPremisesInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wefwe"
+        android:textColor="@color/textBreakageClaim"
+        android:textSize="13dp"
+        app:layout_constraintLeft_toRightOf="@id/tvPremises"
+        app:layout_constraintTop_toBottomOf="@id/tvOffice" />
+
+    <TextView
+        android:id="@+id/tvFloor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:text="@string/floor"
+        android:textColor="@color/textBreakageClaim"
+        android:textSize="13dp"
+        app:layout_constraintLeft_toLeftOf="@id/room_decription"
+        app:layout_constraintTop_toBottomOf="@id/tvPremises" />
+
+    <TextView
+        android:id="@+id/tvFloorInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sdfsd"
+        android:textColor="@color/textBreakageClaim"
+        android:textSize="13dp"
+        app:layout_constraintLeft_toRightOf="@id/tvFloor"
+        app:layout_constraintTop_toBottomOf="@id/tvPremises" />
+
+    <TextView
+        android:id="@+id/tvNumWorkplace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:text="@string/numWorkplace"
+        android:textColor="@color/textBreakageClaim"
+        android:textSize="13dp"
+        app:layout_constraintLeft_toLeftOf="@id/room_decription"
+        app:layout_constraintTop_toBottomOf="@id/tvFloor" />
+
+    <TextView
+        android:id="@+id/tvNumWorkplaceInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="21"
+        android:textColor="@color/textBreakageClaim"
+        android:textSize="13dp"
+        app:layout_constraintLeft_toRightOf="@id/tvNumWorkplace"
+        app:layout_constraintTop_toBottomOf="@id/tvFloor" />
+
+    <TextView
+        android:id="@+id/tvDescriptionProblem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/labelDescriptionProblem"
+        android:textColor="@color/continue_background"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/room_decription"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <EditText
+        android:id="@+id/containerDescriptionProblem"
+        android:layout_width="380dp"
+        android:layout_height="120dp"
+        android:background="@drawable/background_description_problem"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDescriptionProblem"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <Button
+        android:id="@+id/butSend"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:background="@drawable/background_button_green"
+        android:text="@string/butSend"
+        android:textAllCaps="false"
+        android:textColor="@color/textBreakageClaim"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerDescriptionProblem"
+        app:layout_constraintVertical_bias="0.32" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

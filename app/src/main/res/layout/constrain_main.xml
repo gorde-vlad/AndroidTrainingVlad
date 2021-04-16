@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/logo_irlix"
+        android:layout_width="153dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_irlix_logo_l_1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.25"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="215dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_rectangle_35"
+        android:gravity="center"
+        android:hint="@string/etName"
+        android:textAlignment="center"
+        android:textSize="13dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo_irlix"
+        app:layout_constraintBottom_toTopOf="@id/butContinue"
+        app:layout_constraintVertical_bias="0.4"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_rectangle_35"
+        android:gravity="center"
+        android:hint="@string/etPassword"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textSize="13dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etName"/>
+
+    <Button
+        android:id="@+id/butContinue"
+        android:layout_width="165dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:text="@string/butContinue"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/background_continue_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.4"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
